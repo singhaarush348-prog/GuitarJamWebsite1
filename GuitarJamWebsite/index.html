@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Guitar Jam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<!-- Welcome Page -->
+<div id="welcomePage" class="container">
+    <h1>🌌 Welcome to Our Guitar Jam 🌌</h1>
+
+    <input type="text" id="userName" placeholder="Enter Your Name">
+
+    <button onclick="continueToStart()">
+        Continue
+    </button>
+</div>
+
+<!-- Start Page -->
+<div id="startPage" class="container hidden">
+    <h1 id="welcomeText"></h1>
+
+    <button class="floating-btn" onclick="startVideo()">
+        🎸 Get Started
+    </button>
+</div>
+
+<!-- Video Page -->
+<div id="videoPage" class="container hidden">
+
+    <video id="jamVideo" controls>
+        <source src="guitar-jam.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+</div>
+
+<!-- Thank You Page -->
+<div id="thankPage" class="container hidden">
+    <h1>✨ Thank You For Watching ✨</h1>
+    <p>See you again soon 🌠</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
